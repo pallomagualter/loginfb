@@ -15,8 +15,12 @@ export default function App() {
         placeholder="Type your password"
       />
       
-      <TouchableOpacity style={styles.button} onPress={() => {}}>
+      <TouchableOpacity style={styles.btnLogIn} onPress={() => {}}>
         <Text style={styles.buttonText}>LOG IN</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.btnLogOut} onPress={() => {}}>
+        <Text style={styles.buttonText}>LOG OUT</Text>
       </TouchableOpacity>
     </View>
   );
@@ -40,9 +44,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginBottom: 10,
   },
-  button: {
+  btnLogIn: {
     height: 45,
-    backgroundColor: '#8257E6',
+    backgroundColor: '#04d361',
+    borderRadius: 8,
+    alignSelf: 'stretch',
+    paddingHorizontal: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  btnLogOut: {
+    height: 45,
+    backgroundColor: '#EB5757',
     borderRadius: 8,
     alignSelf: 'stretch',
     paddingHorizontal: 20,
