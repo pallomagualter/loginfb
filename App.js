@@ -8,11 +8,15 @@ export default function App() {
       <TextInput 
         style={styles.input}
         placeholder="Type your email"
+        onChangeText={text => onChangeText(text)}
+        value={value}
       />
 
       <TextInput 
         style={styles.input}
         placeholder="Type your password"
+        onChangeText={text => onChangeText(text)}
+        value={value}
       />
       
       <TouchableOpacity style={styles.btnLogIn} onPress={() => {}}>
