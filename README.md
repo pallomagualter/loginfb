@@ -1,5 +1,5 @@
 <h1 align="center">
-  CRUD with Firebase 
+  Log in with Firebase 
   <br />
 </h1>
 
@@ -11,7 +11,7 @@
   <a href="#memo-licença">Licença</a>
 </p>
 <h1 align="center">
-  <img alt="Crud" title="Crud Firebase" src="https://github.com/pallomagualter/crudfb/blob/main/src/assets/crud.png" />
+  <img alt="Login" title="Login Firebase" src="" />
   <br />
 </h1>
 
@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este projeto tem como único intuito estudar a integração React Native/firebase  💜
+Este projeto tem como único intuito estudar a integração React Native/firebase para realizar a operação de Log in 💜
 
 <br />
 
@@ -46,7 +46,7 @@ Este projeto tem como único intuito estudar a integração React Native/firebas
 
 ```bash
 # Clone o Repositório
-$  git clone https://github.com/pallomagualter/crudfb.git
+$  git clone https://github.com/pallomagualter/loginfb.git
 
 #Acesse o diretório mobile
 $ cd crudfb
