@@ -1,0 +1,12 @@
+{
+  "name": "loginfb",
+  "displayName": "loginfb",
+  "expo": {
+    "name": "loginfb",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
