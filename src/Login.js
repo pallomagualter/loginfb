@@ -39,10 +39,6 @@ export default function App() {
         <Text style={styles.buttonText}>LOG OUT</Text>
       </TouchableOpacity>
 
-      <Text style={styles.buttonText}>e-mail: {email}</Text>
-      <Text style={styles.buttonText}>senha: {password}</Text>
-
-
     </View>
   );
 }
