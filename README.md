@@ -49,7 +49,7 @@ Este projeto tem como único intuito estudar a integração React Native/firebas
 $  git clone https://github.com/pallomagualter/loginfb.git
 
 #Acesse o diretório mobile
-$ cd crudfb
+$ cd loginfb
 
 #Instale as dependências
 $ yarn 
