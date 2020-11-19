@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, TextInput, View, TouchableOpacity, Text } from 'react-native';
 import firebase from './firebase';
 
@@ -7,13 +7,23 @@ export default function App() {
   const [password, setPassword] = useState('');
 
   function loginFirebase() {
-    firebase.auth().signInWithEmailAndPassword(email, password)
+    firebase.auth().signInWithEmailAndPassword(email, password) //Login com o firebase
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
       alert(errorCode, errorMessage);
     });
   }
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if(user) {
+          console.log(user.uid)
+        } else {
+          console.log('Não logado!')
+        }
+    });
+  }, []);
 
   return (
     <View style={styles.container}>
