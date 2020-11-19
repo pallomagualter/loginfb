@@ -26,7 +26,7 @@ export default function App() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged(function(user) {
         if(user) {
-          console.log(user.uid)
+          console.log("Logado!" + user.uid)
         } else {
           console.log('Não logado!')
         }
