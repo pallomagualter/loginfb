@@ -7,7 +7,7 @@ export default function App() {
   const [password, setPassword] = useState('');
 
   function loginFirebase() {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+    firebase.auth().signInWithEmailAndPassword(email, password)
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
