@@ -3,20 +3,23 @@ import { StyleSheet, TextInput, View, TouchableOpacity, Text } from 'react-nativ
 //import firebase from 'firebase';
 
 export default function App() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <View style={styles.container}>
       <TextInput 
         style={styles.input}
         placeholder="Type your email"
-        onChangeText={text => onChangeText(text)}
-        value={value}
+        onChangeText={email => setEmail(email)}
+        value={email}
       />
 
       <TextInput 
         style={styles.input}
         placeholder="Type your password"
-        onChangeText={text => onChangeText(text)}
-        value={value}
+        onChangeText={password => setPassword(password)}
+        value={password}
       />
       
       <TouchableOpacity style={styles.btnLogIn} onPress={() => {}}>
