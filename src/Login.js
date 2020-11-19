@@ -17,9 +17,9 @@ export default function App() {
 
   function logOutFirebase() {
     firebase.auth().signOut().then(function() {
-      // Sign-out successful.
+      alert('Deslogado com sucesso!')
     }).catch(function(error) {
-      // An error happened.
+      alert('Falha ao deslogar.')
     });
   }
 
