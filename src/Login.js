@@ -15,6 +15,14 @@ export default function App() {
     });
   }
 
+  function logOutFirebase() {
+    firebase.auth().signOut().then(function() {
+      // Sign-out successful.
+    }).catch(function(error) {
+      // An error happened.
+    });
+  }
+
   useEffect(() => {
     firebase.auth().onAuthStateChanged(function(user) {
         if(user) {
@@ -45,7 +53,7 @@ export default function App() {
         <Text style={styles.buttonText}>LOG IN</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.btnLogOut} onPress={() => {}}>
+      <TouchableOpacity style={styles.btnLogOut} onPress={ () => {logOutFirebase()} }>
         <Text style={styles.buttonText}>LOG OUT</Text>
       </TouchableOpacity>
 
